@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Feedback</title>
+  </head>
+
+  <body>
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="/index.html" class="nav__logo">Sugumaran</a>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="/index.html" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="./about.html" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="./profile.html" class="nav__link">Profile</a></li>
+            <li class="nav__item"><a href="./interest.html" class="nav__link">Interest</a></li>
+            <li class="nav__item"><a href="./findme.html" class="nav__link">Locate me</a></li>
+            <li class="nav__item"><a href="./contact.html" class="nav__link">Contact</a></li>
+            <li class="nav__item"><a href="./feedback.html" class="nav__link active-link">Feedback</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Feedback</h2>
+
+        <div class="contact__container bd-grid">
+          <form action="mailto:sugumarankugan@gmail.com" method="POST"
+            enctype="text/plain" class="contact__form" target="_blank">
+
+            <label for="name" class="form-label">1. Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" class="contact__input" required/>
+
+            <label for="email" class="form-label">2. Email Address:</label>
+            <input type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              class="contact__input"
+              required
+            />
+
+            <label for="dob" class="form-label">3. Date of Birth:</label>
+            <input
+              type="date"
+              id="dob"
+              name="dob"
+              class="contact__input"
+            />
+
+            <label for="how_found" class="form-label">4. How did you find my website?</label>
+            <select
+              id="how_found"
+              name="how_found"
+              class="contact__input"
+            >
+              <option value="">Select</option>
+              <option>Search Engine</option>
+              <option>Social Media</option>
+              <option>Friend Recommendation</option>
+              <option>Professional Contact</option>
+              <option>Advertisement</option>
+              <option>Other</option>
+            </select>
+
+            <label for="experience" class="form-label">5. How would you rate your overall experience?</label>
+            <select
+              id="experience"
+              name="experience"
+              class="contact__input"
+              required
+            >
+              <option value="">Select</option>
+              <option>Excellent</option>
+              <option>Good</option>
+              <option>Average</option>
+              <option>Poor</option>
+            </select>
+
+            <label for="favorite" class="form-label">6. What was your favorite part of the website?</label>
+            <input
+              type="text"
+              id="favorite"
+              name="favorite"
+              class="contact__input"
+            />
+
+            <label for="improve" class="form-label">7. What can I improve?</label>
+            <textarea
+              id="improve"
+              name="improve"
+              rows="4"
+              class="contact__input"
+            ></textarea>
+
+            <label for="design" class="form-label">8. How satisfied are you with the website design? (1-10)</label>
+            <input
+              type="range"
+              id="design"
+              name="design"
+              min="1"
+              max="10"
+              class="contact__input"
+            />
+
+            <label for="find" class="form-label">9. Did you find what you were looking for?</label>
+            <select
+              name="find"
+              id="find"
+              class="contact__input"
+            >
+              <option value="">Select</option>
+              <option>Yes</option>
+              <option>No</option>
+              <option>Partially</option>
+            </select>
+
+            <label for="issues" class="form-label">10. Any issues you faced?</label>
+            <textarea
+              id="issues"
+              name="issues"
+              rows="4"
+              class="contact__input"
+            ></textarea>
+
+            <label for="features" class="form-label">11. What features would you like to see added?</label>
+            <textarea
+              id="features"
+              name="features"
+              rows="4"
+              class="contact__input"
+            ></textarea>
+
+            <label for="recommend" class="form-label">12. Would you recommend this website to others?</label>
+            <select
+              name="recommend"
+              id="recommend"
+              class="contact__input"
+            >
+              <option value="">Select</option>
+              <option>Definitely</option>
+              <option>Probably</option>
+              <option>Not Sure</option>
+              <option>Probably Not</option>
+              <option>Definitely Not</option>
+            </select>
+
+            <label for="mobile_experience" class="form-label">13. How was your experience on mobile devices?</label>
+            <select
+              name="mobile_experience"
+              id="mobile_experience"
+              class="contact__input"
+            >
+              <option value="">Select</option>
+              <option>Excellent</option>
+              <option>Good</option>
+              <option>Average</option>
+              <option>Poor</option>
+              <option>Did not use on mobile</option>
+            </select>
+
+            <label for="additional" class="form-label">14. Any additional comments?</label>
+            <textarea
+              id="additional"
+              name="additional"
+              rows="4"
+              class="contact__input"
+            ></textarea>
+
+            <div style="margin-top: 1rem;">
+              <button type="submit" class="contact__button button">
+                Submit Feedback
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+        <footer class="footer">
+            <p class="footer__title">Contact me</p>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGAi2ZP8s3aLgAAAZZR4tOwHYJ4263M_7V9ORc5ZxRHHm5sWqcxqyPnN5Gz2uYXKJw38q9Bqxe8FluOU8hvoErDl2547cG_jVQicyikTSfcE9GZOvZatVaPA7SgTWX55oRT4C4=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsugumaran-s-818b23293%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app" class="footer__icon" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://wa.me/+916381074457" class="footer__icon" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="https://github.com/an0nl" class="footer__icon" target="_blank"><i class='bx bxl-github' ></i></a>
+            </div>
+            <p class="footer__copy">&#169;2025 maran. All rights reserved.</p>
+        </footer>
+    <script src="/js/feedbackScript.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
