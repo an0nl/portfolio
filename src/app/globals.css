@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 97%;
+    --foreground: 220 20% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+    --border: 220 13% 88%;
+    --input: 220 13% 88%;
+    --ring: 220 20% 10%;
+    --accent: 213 94% 52%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 220 13% 93%;
+    --muted-foreground: 220 10% 48%;
+    --primary: 220 20% 10%;
+    --primary-foreground: 0 0% 97%;
+    --secondary: 213 94% 96%;
+    --secondary-foreground: 213 94% 30%;
+    --radius: 0.75rem;
+
+    --font-display: 'DM Serif Display', serif;
+    --font-geist: 'DM Sans', sans-serif;
+    --font-mono: 'DM Mono', monospace;
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 220 13% 93%;
+    --card: 220 20% 11%;
+    --card-foreground: 220 13% 93%;
+    --border: 220 13% 20%;
+    --input: 220 13% 20%;
+    --ring: 213 94% 52%;
+    --accent: 213 94% 58%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 220 15% 15%;
+    --muted-foreground: 220 10% 58%;
+    --primary: 220 13% 93%;
+    --primary-foreground: 220 20% 8%;
+    --secondary: 213 30% 18%;
+    --secondary-foreground: 213 94% 70%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-geist);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: hsl(213 94% 52% / 0.2);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}
