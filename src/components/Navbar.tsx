@@ -36,10 +36,10 @@ export default function Navbar() {
       const el = document.getElementById(id);
       if (!el) return;
       const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) setActiveSection(id);
-        },
-        { threshold: 0.35, rootMargin: "-60px 0px -40% 0px" }
+      ([entry]) => {
+         if (entry.isIntersecting) setActiveSection(id);
+      },
+        { threshold: 0.1, rootMargin: "-60px 0px -20% 0px" }
       );
       observer.observe(el);
       observers.push(observer);
